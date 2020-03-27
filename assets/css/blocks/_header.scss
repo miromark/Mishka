@@ -123,6 +123,7 @@ header {
 
     .navbar_list {
         display: flex;
+        display:-webkit-box;
     }
 
     .navbar_list .list_item {
