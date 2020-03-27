@@ -1,0 +1,222 @@
+header {
+    @include d_width(320px);
+
+    .container {
+        max-width: 320px; // for mobile header
+        position: relative;
+    }
+}
+
+.burger_btn {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    background-image: url("../images/header/menu.png");
+    background-repeat: no-repeat;
+    top: 25px;
+    right: 30px;
+    cursor: pointer;
+
+    transition: background linear .3s;
+    -webkit-transition: background linear .3s;
+    -moz-transition: background linear .3s;
+    -ms-transition: background linear .3s;
+    -o-transition: background linear .3s;
+
+
+    &:hover,
+    &:active {
+        opacity: .5;
+    }
+}
+
+.burger_btn-active {
+    background-image: url("../images/header/menu-close.png");
+}
+
+.navbar {
+    height: 100%;
+
+    .list_item {
+        height: 0;
+        font-size: 0;
+        font-weight: 700;
+        cursor: pointer;
+        padding: 0;
+        transition: linear .3s;
+        -webkit-transition: linear .3s;
+        -moz-transition: linear .3s;
+        -ms-transition: linear .3s;
+        -o-transition: linear .3s;
+
+        a {
+            color: $text
+        }
+
+        i {
+            margin: 0 20px 0 -40px;
+            color: $icon;
+        }
+
+        &:hover {
+            a {
+                color: $link_hover;
+            }
+
+            i {
+                color: $icon_hover;
+            }
+        }
+
+        &:active {
+            a {
+                color: $link_active;
+            }
+
+            i {
+                color: $icon_active;
+            }
+        }
+
+        &:first-child {
+            text-align: center;
+            padding: 15px 0;
+            border-bottom: solid 2px $icon;
+            height: auto;
+
+            &:hover {
+                filter: opacity(.5);
+                -webkit-filter: opacity(.5);
+            }
+
+            &:active {
+                filter: opacity(.3);
+                -webkit-filter: opacity(.3);
+            }
+        }
+    }
+
+    .list_item-active {
+        height: auto;
+        font-size: 16px;
+        border-bottom: solid $icon 2px;
+        padding: 15px 0 15px 75px;
+    }
+}
+
+//media tablet 
+
+@media #{$tablet} {
+
+    header {
+        @include d_width(768px);
+        border-bottom: solid 2px $icon;
+
+        .container {
+            max-width: 668px;
+        }
+    }
+
+    .burger_btn {
+        display: none;
+    }
+
+    .navbar_list {
+        display: flex;
+    }
+
+    .navbar_list .list_item {
+        height: auto;
+        font-size: 15px;
+        padding: 35px 0;
+
+        .search_mobile {
+            display: none;
+        }
+
+        &:first-child {
+            border: none;
+            padding: 20px 0;
+            text-align: left;
+        }
+
+        i {
+            margin: 0 35px;
+            font-size: 20px;
+        }
+    }
+
+    .navbar_list .search {
+        border-left: solid 2px $icon;
+        border-right: solid 2px $icon;
+    }
+
+    .navbar_list .form_link,
+    .navbar_list .catalog_link {
+        transform: translateY(85%);
+        -webkit-transform: translateY(85%);
+        -moz-transform: translateY(85%);
+        -ms-transform: translateY(85%);
+        -o-transform: translateY(85%);
+        margin: 0 16px;
+    }
+
+    .navbar_list .catalog_link {
+        margin-left: -113px;
+    }
+}
+
+@media #{$desktop} {
+    header {
+        @include d_width(1150px);
+        height: 90px;
+
+        .container {
+            max-width: 1050px;
+            height: inherit;
+        }
+    }
+
+    .navbar_list {
+        justify-content: space-between;
+        line-height: 90px;
+        height: inherit;
+
+        & .catalog_link {
+            order: 1;
+        }
+
+        & .form_link {
+            order: 2;
+        }
+
+        & .search {
+            order: 4;
+        }
+
+        & .cart {
+            order: 5;
+        }
+    }
+
+    .navbar_list .list_item {
+        padding: 0;
+        margin: 0;
+        height: 100%;
+        font-size: 16px;
+        transform: translateY(0);
+        -webkit-transform: translateY(0);
+        -moz-transform: translateY(0);
+        -ms-transform: translateY(0);
+        -o-transform: translateY(0);
+
+        &:first-child {
+            order: 3;
+            padding: 10px 60px 0 40px;
+        }
+    }
+
+    .navbar_list .search {
+        margin-right: -50px;
+    }
+}

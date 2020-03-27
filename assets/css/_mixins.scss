@@ -1,0 +1,55 @@
+//buttons
+@mixin  button($param, $param1) {
+    width: $param;
+    font-size: 16px;
+    font-weight: 700;
+    color:$param1;
+    border: solid 2px $param1;
+    padding: 17px 0;
+    text-align: center;
+
+    &:hover{
+        color:#fff;
+        background-color: #444444;
+        border-color: #444444;
+    }
+
+    &:active{
+        color:#7c7c7c;
+    }
+}
+//for media
+
+@mixin d_width ($param) {
+    width: $param;
+    margin: 0 auto;
+}
+
+//for link(hover, active)
+
+@mixin links($param1, $param2, $param3) {
+    color:$param1;
+
+    &:hover{
+        color:$param2;
+    }
+
+    &:active{
+        color:$param3;
+    }
+}
+
+//for title
+
+@mixin title() {
+    font-weight: 800;
+    font-size:24px;
+
+    @media #{$tablet}{
+        font-size: 40px;
+    }
+
+    @media #{$desktop}{
+        font-size: 50px;
+    }
+}

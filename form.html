@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/icons/css/all.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Spicy+Rice&display=swap&subset=cyrillic"
+        rel="stylesheet">
+
+    <title>Mishka</title>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <nav class="navbar">
+                <ul class="navbar_list">
+                    <li class="list_item logo">
+                        <a href="index.html">
+                            <picture>
+                                <source media="(min-width: 1150px)" srcset="assets/images/header/logo-desktop.png">
+                                <source media="(min-width: 768px)" srcset="assets/images/header/logo-tablet.png">
+                                <img src="assets/images/header/logo-mobile.png" alt="Mishka">
+                            </picture>
+                        </a>
+                    </li>
+                    <li class="list_item catalog_link">
+                        <a href="catalog.html">Каталог товаров</a>
+                    </li>
+                    <li class="list_item form_link">
+                        <a href="form.html">Вязание на заказ</a>
+                    </li>
+                    <li class="list_item search">
+                        <p class="search_field">
+                            <i class="fas fa-search"></i>
+                            <span class="search_mobile">Поиск по сайту</span>
+                        </p>
+                    </li>
+                    <li class="list_item  cart">
+                        <p class="cart_field">
+                            <i class="fas fa-shopping-basket"></i>
+                            Корзина:
+                            <span class="cart_items">пока пуста</span>
+                        </p>
+                    </li>
+                </ul>
+                <div class="burger_btn"></div>
+            </nav>
+        </div>
+    </header>
+    <section class="main_form">
+        <div class="container">
+            <div class="sub_menu">
+                <div class="sub_links">
+                    <a href="#" class="sub_new">Новые поступления</a>
+                    <a href="#" class="sub_sale">Распродажа</a>
+                </div>
+                <div class="sub_info">
+                    <p class="sub_delivery">Бесплатная доставка</p>
+                </div>
+            </div>
+            <div class="main_title">
+                <h2>Вязание на заказ</h2>
+            </div>
+        </div>
+        <div class="zigzag_fill">
+            <picture>
+                <source media="(min-width: 1150px)" srcset="assets/images/main_page/zigzag-fill.png">
+                <img src="assets/images/main_page/zigzag-fill-tablet.png">
+            </picture>
+        </div>
+    </section>
+    <section class="form">
+        <div class="container">
+            <form class="order">
+                <fieldset class="order_type">
+                    <legend class="type">ТИП</legend>
+                    <input type="radio" name="select_type" id="toy">
+                    <label for="toy">
+                        Аксессуар для интерьера
+                    </label>
+                    <input type="radio" name="select_type" id="cart">
+                    <label for="cart">
+                        Детская игрушка
+                    </label>
+                </fieldset>
+                <fieldset class="order_color">
+                    <legend class="color">ЦВЕТ</legend>
+                        <input type="checkbox" name="color" id="white" value="white">
+                            <label for="white">Белый</label>
+                        <input type="checkbox" name="color" id="grey" value="grey">
+                            <label for="grey">Серый</label>
+                        <input type="checkbox" name="color" id="tiffany" value="tiffany">
+                            <label for="tiffany">"Тиффани"</label>
+                        <input type="checkbox" name="color" id="black" value="black">
+                            <label for="black">Чорный</label>
+                        <input type="checkbox" name="color" id="pink" value="pink">
+                            <label for="pink">Розовый</label>
+                        <input type="checkbox" name="color" id="orange" value="orange">
+                            <label for="orange">Оранжевый</label>
+                </fieldset>
+                <fieldset class="user_full-name">
+                    <legend class="full-name">ФИО</legend>
+                    <div class="user_last-name">
+                        <p>Фамилия:</p>
+                        <input type="text" placeholder="Укажите фамилию" name="user_last-name" required="required">
+                    </div>
+                    <div class="user_first-name">
+                       <p>Имя:</p>
+                        <input type="text" placeholder="Введите ваше имя" name="user_first-name" required="required">
+                    </div>
+                    <div class="user_surname">
+                        <p>Отчество:</p>
+                        <input type="text" placeholder="Отчество, если желаете" name="user_surname" required="required">
+                    </div>
+                </fieldset>
+                <fieldset class="user_phone">
+                    <legend class="phone">ТЕЛ</legend>
+                        <input type="phone" name="user_phone" id="user_phone" placeholder="+7 ХХХ ХХ ХХ" required="required">
+                </fieldset>
+                <fieldset class="user_email">
+                    <legend class="email">E-MAIL</legend>
+                    <input type="email" name="user_email" id="user_email" placeholder="Ваш e-mail" required="required">
+                </fieldset>
+                <fieldset class="user_additional">
+                    <legend class="additional">ДОП</legend>
+                    <textarea name="user_rew" placeholder="Опишите все ваши пожелания к заказу" required="required"></textarea>
+                </fieldset>    
+                <input type="submit" class="submit_btn" value="ОТПРАВИТЬ ЗАКАЗ">
+                <p class="additional_placeholder">Все поля являются обязательными</p>
+            </form>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <div class="footer_logo">
+                <a href="#">MISHKA</a>
+            </div>
+            <div class="social_links">
+                <a href="#" class="link" title="Twitter">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="#" class="link" title="Facebook">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="#" class="link" title="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </div>
+            <div class="copyrihgt">
+                <p class="copy">
+                    &copy;March 2020
+                </p>
+            </div>
+        </div>
+    </footer>
+    <script src="assets/js/burger_menu.js"></script>
+</body>
+
+</html>
