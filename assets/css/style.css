@@ -371,7 +371,7 @@ footer .social_links a:active {
 .contacts .contacts_title {
   font-weight: 800;
   font-size: 24px;
-  margin: 30px 0;
+  padding: 30px 0;
 }
 
 @media (min-width: 768px) {
@@ -414,7 +414,7 @@ footer .social_links a:active {
   font-weight: 700;
   color: #000;
   border: solid 2px #000;
-  padding: 17px 0;
+  padding: 10px 0;
   text-align: center;
   background-color: #fff;
   cursor: pointer;
@@ -495,11 +495,202 @@ footer .social_links a:active {
   }
   .contacts .contact_map {
     position: absolute;
-    top: -83px;
+    top: -45px;
     right: 50px;
   }
   .contacts .contact_flag {
     left: 115px;
+  }
+}
+
+.rewievs {
+  width: 320px;
+  margin: 0 auto;
+}
+
+.rewievs .rewievs_title {
+  font-weight: 800;
+  font-size: 24px;
+  padding: 30px 0;
+}
+
+@media (min-width: 768px) {
+  .rewievs .rewievs_title {
+    font-size: 40px;
+  }
+}
+
+@media (min-width: 1150px) {
+  .rewievs .rewievs_title {
+    font-size: 50px;
+  }
+}
+
+.rewievs .user_rewievs {
+  position: relative;
+  color: #000;
+  height: 270px;
+  font-size: 14px;
+  margin: 10px 0;
+}
+
+.rewievs .user_rewievs .user_1,
+.rewievs .user_rewievs .user_2,
+.rewievs .user_rewievs .user_3 {
+  position: absolute;
+  opacity: 0;
+  transition: opacity ease .3s;
+  -webkit-transition: opacity ease .3s;
+  -moz-transition: opacity ease .3s;
+  -ms-transition: opacity ease .3s;
+  -o-transition: opacity ease .3s;
+}
+
+.rewievs .user_rewievs .user_active {
+  opacity: 1;
+}
+
+.rewievs .user_rewievs .rewiev_text {
+  height: 200px;
+}
+
+.rewievs .user_rewievs .user_name {
+  font-weight: 700;
+  margin: 10px 0;
+}
+
+.rewievs .rewievs_arrows {
+  width: 100%;
+  border: solid 2px #ececec;
+}
+
+.rewievs .rewievs_arrows .arrow_next,
+.rewievs .rewievs_arrows .arrow_prev {
+  font-size: 40px;
+  padding: 0 40px;
+  cursor: pointer;
+  color: #000;
+}
+
+.rewievs .rewievs_arrows .arrow_next:hover,
+.rewievs .rewievs_arrows .arrow_prev:hover {
+  color: #555;
+}
+
+.rewievs .rewievs_arrows .arrow_next:active,
+.rewievs .rewievs_arrows .arrow_prev:active {
+  color: #b2b2b2;
+}
+
+.rewievs .rewievs_arrows .arrow_next {
+  float: right;
+}
+
+.rewievs .rewiev_btn {
+  width: 260px;
+  font-size: 16px;
+  font-weight: 700;
+  color: #000;
+  border: solid 2px #000;
+  padding: 10px 0;
+  text-align: center;
+  background-color: #fff;
+  cursor: pointer;
+  margin: 30px 0;
+}
+
+.rewievs .rewiev_btn:hover {
+  color: #fff;
+  background-color: #444444;
+  border-color: #444444;
+}
+
+.rewievs .rewiev_btn:active {
+  color: #7c7c7c;
+}
+
+@media (min-width: 768px) {
+  .rewievs {
+    width: 768px;
+    margin: 0 auto;
+    position: relative;
+    background-image: url("../images/main_page/review.png");
+    background-repeat: no-repeat;
+  }
+  .rewievs .container {
+    margin-bottom: 140px;
+  }
+  .rewievs .rewievs_title {
+    padding: 70px 0;
+  }
+  .rewievs .user_rewievs {
+    height: 170px;
+    font-size: 16px;
+  }
+  .rewievs .user_rewievs .rewiev_text {
+    height: 100px;
+    width: 668px;
+  }
+  .rewievs .user_rewievs .user_name,
+  .rewievs .user_rewievs .user_email {
+    width: 300px;
+  }
+  .rewievs .rewievs_arrows {
+    width: 168px;
+    position: absolute;
+    border: none;
+    top: 300px;
+    right: 30px;
+  }
+  .rewievs .rewievs_arrows .arrow_prev,
+  .rewievs .rewievs_arrows .arrow_next {
+    padding: 0 20px;
+  }
+  .rewievs .rewiev_btn {
+    width: 168px;
+    font-size: 16px;
+    font-weight: 700;
+    color: #000;
+    border: solid 2px #000;
+    padding: 10px 0;
+    text-align: center;
+    background-color: #fff;
+    cursor: pointer;
+    position: absolute;
+    top: 45px;
+    right: 30px;
+  }
+  .rewievs .rewiev_btn:hover {
+    color: #fff;
+    background-color: #444444;
+    border-color: #444444;
+  }
+  .rewievs .rewiev_btn:active {
+    color: #7c7c7c;
+  }
+  .rewievs .zigzag_line {
+    margin: 40px 0;
+  }
+}
+
+@media (min-width: 1150px) {
+  .rewievs {
+    width: 1150px;
+    margin: 0 auto;
+  }
+  .rewievs .rewievs_title {
+    margin-left: 130px;
+  }
+  .rewievs .user_rewievs {
+    margin-left: 130px;
+  }
+  .rewievs .rewievs_arrows {
+    top: 310px;
+    right: 50px;
+  }
+  .rewievs .rewiev_btn {
+    top: 55px;
+    right: 50px;
   }
 }
 /*# sourceMappingURL=style.css.map */
