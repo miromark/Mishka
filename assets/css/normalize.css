@@ -48,12 +48,6 @@ a:not([class]) {
     text-decoration-skip-ink: auto;
 }
 
-/* Упрощаем работу с изображениями */
-img {
-    max-width: 100%;
-    display: block;
-}
-
 /* Указываем понятную периодичность в потоке данных у article*/
 article>*+* {
     margin-top: 1em;
@@ -65,6 +59,7 @@ button,
 textarea,
 select {
     font: inherit;
+    outline: none;
 }
 
 /* Удаляем все анимации и переходы для людей, которые предпочитай их не использовать */

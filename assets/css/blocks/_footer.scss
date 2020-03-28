@@ -28,15 +28,7 @@ footer{
         a{
             font-size: 25px;
             margin:0 15px;
-            color:$light_text;
-
-            &:hover{
-                color:$icon_hover;
-            }
-
-            &:active{
-                color:$icon_active;
-            }
+           @include links($light_text, $icon_hover, $icon_active);
         }
     }
 
@@ -67,15 +59,7 @@ footer{
             font-family: $footer_logo;
 
             a{
-                color:$text;
-
-                &:hover{
-                    color:$icon_hover;
-                }
-
-                &:active{
-                    color:$icon_active;
-                }
+              @include links($text, $icon_hover, $icon_active);
             }
         }
 
