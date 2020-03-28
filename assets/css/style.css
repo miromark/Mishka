@@ -1,35 +1,9 @@
 body {
-  margin: 0;
-  padding: 0;
   font-family: "Open Sans", san-serif;
-}
-
-p {
-  -webkit-margin-before: 0;
-          margin-block-start: 0;
-  -webkit-margin-after: 0;
-          margin-block-end: 0;
-}
-
-ul {
-  -webkit-margin-before: 0;
-          margin-block-start: 0;
-  -webkit-margin-after: 0;
-          margin-block-end: 0;
-  -webkit-padding-start: 0;
-          padding-inline-start: 0;
 }
 
 a {
   text-decoration: none;
-}
-
-li {
-  list-style: none;
-}
-
-input, textarea {
-  outline: none;
 }
 
 .container {
@@ -289,6 +263,93 @@ header .container {
   }
   .navbar_list .search {
     margin-right: -50px;
+  }
+}
+
+footer {
+  width: 320px;
+  margin: 0 auto;
+  background-color: #f1f1f1;
+}
+
+footer .footer_logo {
+  display: none;
+}
+
+footer .copyright {
+  text-align: center;
+  padding: 20px 0;
+  color: #000;
+  font-size: 18px;
+}
+
+footer .social_links {
+  display: flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 15px 0;
+  border-bottom: solid 2px #b2b2b2;
+}
+
+footer .social_links a {
+  font-size: 25px;
+  margin: 0 15px;
+  color: #444;
+}
+
+footer .social_links a:hover {
+  color: #63d1bb;
+}
+
+footer .social_links a:active {
+  color: #d0f1ea;
+}
+
+@media (min-width: 768px) {
+  footer {
+    width: 768px;
+    margin: 0 auto;
+    height: 80px;
+    line-height: 80px;
+  }
+  footer .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+  footer .footer_logo {
+    display: block;
+    font-size: 28px;
+    font-family: "Spicy Rice", cursive;
+  }
+  footer .footer_logo a {
+    color: #000;
+  }
+  footer .footer_logo a:hover {
+    color: #63d1bb;
+  }
+  footer .footer_logo a:active {
+    color: #d0f1ea;
+  }
+  footer .social_links {
+    border: none;
+    padding: 0;
+  }
+  footer .copyright {
+    padding: 0;
+  }
+}
+
+@media (min-width: 1150px) {
+  footer {
+    width: 1150px;
+    margin: 0 auto;
   }
 }
 /*# sourceMappingURL=style.css.map */
