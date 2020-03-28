@@ -8,69 +8,70 @@
     <link rel="stylesheet" href="assets/icons/css/all.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Spicy+Rice&display=swap&subset=cyrillic"
         rel="stylesheet">
+    <script src="assets/js/polifill.js"></script>
 
     <title>Mishka</title>
 </head>
 
 <body>
-    <header>
-        <div class="container">
-            <nav class="navbar">
-                <ul class="navbar_list">
-                    <li class="list_item logo">
-                        <a href="index.html">    
-                            <picture>
-                                <source media="(min-width: 1150px)" srcset="assets/images/header/logo-desktop.png">
-                                <source media="(min-width: 768px)" srcset="assets/images/header/logo-tablet.png">
-                                <img src="assets/images/header/logo-mobile.png" alt="Mishka">
-                            </picture>
-                        </a>
-                    </li>
-                    <li class="list_item catalog_link">
-                        <a href="catalog.html">Каталог товаров</a>
-                    </li>
-                    <li class="list_item form_link">
-                        <a href="form.html">Вязание на заказ</a>
-                    </li>
-                    <li class="list_item search">
-                        <p class="search_field">
-                            <i class="fas fa-search"></i>
-                            <span class="search_mobile">Поиск по сайту</span>
-                        </p>
-                    </li>
-                    <li class="list_item  cart">
-                        <p class="cart_field">
-                            <i class="fas fa-shopping-basket"></i>
-                            Корзина:
-                            <span class="cart_items">пока пуста</span>
-                        </p>
-                    </li>
-                </ul>
-                <div class="burger_btn"></div>
-            </nav>
-        </div>
-    </header>
-    <section class="main_catalog">
+     <header>
          <div class="container">
-             <div class="sub_menu">
-                 <div class="sub_links">
-                     <a href="#" class="sub_new">Новые поступления</a>
-                     <a href="#" class="sub_sale">Распродажа</a>
+             <nav class="navbar">
+                 <div class="navbar_list">
+                     <div class="list_item logo">
+                         <a href="index.html">
+                             <picture>
+                                 <source media="(min-width: 1150px)" srcset="assets/images/header/logo-desktop.png">
+                                 <source media="(min-width: 768px)" srcset="assets/images/header/logo-tablet.png">
+                                 <img src="assets/images/header/logo-mobile.png" alt="Mishka">
+                             </picture>
+                         </a>
+                     </div>
+                     <div class="list_item catalog_link">
+                         <a href="catalog.html">Каталог товаров</a>
+                     </div>
+                     <div class="list_item form_link">
+                         <a href="form.html">Вязание на заказ</a>
+                     </div>
+                     <div class="list_item search">
+                         <a class="search_field">
+                             <i class="fas fa-search"></i>
+                             <span class="search_mobile">Поиск по сайту</span>
+                         </a>
+                     </div>
+                     <div class="list_item  cart">
+                         <a class="cart_field">
+                             <i class="fas fa-shopping-basket"></i>
+                             Корзина:
+                             <span class="cart_items">пока пуста</span>
+                         </a>
+                     </div>
                  </div>
-                 <div class="sub_info">
-                     <p class="sub_delivery">Бесплатная доставка</p>
-                 </div>
-             </div>
-             <div class="main_title">
-                 <h2>Каталог товаров</h2>
-             </div>
-        </div>
-         <div class="zigzag_fill">
-             <picture>
-                 <source media="(min-width: 1150px)" srcset="assets/images/main_page/zigzag-fill.png">
-                 <img src="assets/images/main_page/zigzag-fill-tablet.png">
-             </picture>
+                 <div class="burger_btn"></div>
+             </nav>
          </div>
+     </header>
+    <section class="main_catalog">
+        <div class="container">
+            <div class="sub_menu">
+                <div class="sub_links">
+                    <a href="#" class="sub_new">Новые поступления</a>
+                    <a href="#" class="sub_sale">Распродажа</a>
+                </div>
+                <div class="sub_info">
+                    <p class="sub_delivery">Бесплатная доставка</p>
+                </div>
+            </div>
+            <div class="main_title">
+                <h2>Каталог товаров</h2>
+            </div>
+        </div>
+        <div class="zigzag_fill">
+            <picture>
+                <source media="(min-width: 1150px)" srcset="assets/images/main_page/zigzag-fill.png">
+                <img src="assets/images/main_page/zigzag-fill-tablet.png">
+            </picture>
+        </div>
     </section>
     <section class="catalog">
         <div class="container">
@@ -79,8 +80,8 @@
                     <div class="card-poster">
                         <picture>
                             <source media="(min-width: 1150px)" srcset="assets/images/catalog/photo-1-desktop.png">
-                                <source media="(min-width: 768px)" srcset="assets/images/catalog/photo-1-tablet.png">
-                                    <img src="assets/images/catalog/photo-1-mobile.png">
+                            <source media="(min-width: 768px)" srcset="assets/images/catalog/photo-1-tablet.png">
+                            <img src="assets/images/catalog/photo-1-mobile.png">
                         </picture>
                     </div>
                     <div class="card_description">
@@ -145,8 +146,8 @@
             <div class="video_play">
                 <picture>
                     <source media="(min-width: 1150px)" srcset="assets/images/catalog/video-desktop.png">
-                        <source media="(min-width: 768px)" srcset="assets/images/catalog/video-tablet.png">
-                            <img src="assets/images/catalog/video-mobile.png">
+                    <source media="(min-width: 768px)" srcset="assets/images/catalog/video-tablet.png">
+                    <img src="assets/images/catalog/video-mobile.png">
                 </picture>
                 <a href="#"><i class="fab fa-youtube"></i></a>
             </div>

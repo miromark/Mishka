@@ -122,8 +122,11 @@ header {
     }
 
     .navbar_list {
-        display: flex;
-        display:-webkit-box;
+         display: -webkit-box;
+         display: -moz-box;
+         display: -webkit-flex;
+         display: -ms-flexbox;
+         display: flex;
     }
 
     .navbar_list .list_item {
@@ -155,11 +158,11 @@ header {
 
     .navbar_list .form_link,
     .navbar_list .catalog_link {
-        transform: translateY(85%);
         -webkit-transform: translateY(85%);
         -moz-transform: translateY(85%);
         -ms-transform: translateY(85%);
         -o-transform: translateY(85%);
+         transform: translateY(85%);
         margin: 0 16px;
     }
 

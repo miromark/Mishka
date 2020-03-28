@@ -170,6 +170,7 @@ header .container {
     height: auto;
     font-size: 15px;
     padding: 35px 0;
+    border: none;
   }
   .navbar_list .list_item .search_mobile {
     display: none;
@@ -189,11 +190,8 @@ header .container {
   }
   .navbar_list .form_link,
   .navbar_list .catalog_link {
-    transform: translateY(85%);
     -webkit-transform: translateY(85%);
-    -moz-transform: translateY(85%);
-    -ms-transform: translateY(85%);
-    -o-transform: translateY(85%);
+    transform: translateY(85%);
     margin: 0 16px;
   }
   .navbar_list .catalog_link {
